@@ -16,7 +16,7 @@
     <h1 class="text-2xl">Greenden</h1>
  
     <!-- herolink menuicon -->
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+    <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
     </svg>
     
@@ -34,35 +34,56 @@
   </ul>
    </nav>
 
+  <!-- sidenav -->
+  <section id="sidenav" class="bg-green-100 fixed top-0 z-20 transition-all duration-1000" style="height: 100vh; width: 50%; right: -50%;">
+    <div class="text-right p-6">
+      <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+
+    <ul class="flex flex-col items-center gap-10 text-gray-600">
+       <li>
+        <a class="hover:underline hover:text-black" href="index.html">Home</a>
+      </li>
+      <li>
+        <a class="hover:underline hover:text-black" href="#">Products</a>
+      </li>
+      <li>
+        <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+      </li>
+    </ul>
+     </nav>
+  </section>
+  
+
    <!-- products -->
   <section class="text-center">
     <h1 class="text-3xl text-bold mt-6">Our Products</h1>
-     <input type="text" class=" border border-black p-2 m-3" style="width: 80%;">
+     <input id="search" type="text" class=" border border-black p-2 m-3" style="width: 80%;" placeholder="Search for Products">
 
-     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 m-5">
+     <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 gap-4 m-5">
       <div>
         <img src="./img/p.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-        <h1>Rose Plant</h1>
+        <h1>Yellow Plant</h1>
         <p>$20</p>
       </div>
       <div>
         <img src="./img/p4.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-        <h1>Rose Plant</h1>
+        <h1>Pink Plant</h1>
         <p>$20</p>
       </div>
       <div>
         <img src="./img/p1.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-        <h1>Rose Plant</h1>
+        <h1>Orange Plant</h1>
         <p>$20</p>
       </div>
       <div>
         <img src="./img/p2.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-        <h1>Rose Plant</h1>
+        <h1>voilet Plant</h1>
         <p>$20</p>
       </div>
       <div>
         <img src="./img/p3.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-        <h1>Rose Plant</h1>
+        <h1>Green Plant</h1>
         <p>$20</p>
       </div>
       <div>
@@ -72,12 +93,12 @@
       </div>
       <div>
         <img src="./img/p0.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-        <h1>Rose Plant</h1>
+        <h1>white Plant</h1>
         <p>$20</p>
       </div>
       <div>
         <img src="./img/p.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-        <h1>Rose Plant</h1>
+        <h1>Color Plant</h1>
         <p>$20</p>
       </div>
 
@@ -93,6 +114,6 @@
     <p>@ 2025 greenden.com</p>
   </section>
 
-  
+  <script src="product.js"></script>
 </body>
 </html>
